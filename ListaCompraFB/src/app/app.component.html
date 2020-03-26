@@ -1,0 +1,28 @@
+<h2>Lista de productos disponibles</h2>
+<div class="lista">
+  <div class="arriba" *ngFor="let product of products">
+    <h3 *ngIf="!product.comprado">
+      <h3>{{ product.name }}</h3>
+      <p>Descripción: {{ product.description }}</p>
+      <p>Precio: {{ product.price }}</p>
+      <button (click)="this.dbApp.altaproducto(product, product.name, product.description)" [title]="product.name">
+        Comprar
+      </button>
+    </h3>
+  </div>
+</div>
+
+<h2>Lista de productos seleccionados</h2>
+<div class="compra">
+  <div class="abajo" *ngFor="let product of products">
+    <h3 *ngIf="product.comprado">
+      <h3>{{ product.name }}</h3>
+      <p>Descripción: {{ product.description }}</p>
+      <p>Precio: {{ product.price }}</p>
+      <button (click)="this.dbApp.bajaproducto(product, product.name)" [title]="product.name">
+        Devolver
+      </button>
+    </h3>
+  </div>
+</div>
+

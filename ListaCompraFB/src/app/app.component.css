@@ -1,0 +1,40 @@
+h2 {
+  color: greenyellow;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+h3 {
+  color: black;
+}
+
+button {
+  color: black;
+  font-weight: bold;
+  background-color: #cd6900;
+}
+
+div.lista {
+  display: inline-block;
+  width: 1500px;
+  padding-bottom: 10px;
+}
+
+div.compra {
+  display: inline-block;
+  width: 1500px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+div.arriba {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+div.abajo {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0 10px;
+}
